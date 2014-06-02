@@ -1112,7 +1112,7 @@ body{
   padding-top: 50px;
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-size: 70px;
   line-height: 80px;
   color: #343434;
@@ -1120,11 +1120,12 @@ body{
 .content 
 {
   height: 370px;
+  margin-left: 10px;
 }
 .content_left
 {
   width: 600px;
-  margin-right: 30px;
+  margin-right: 20px;
   height: 300px;
   float: left;
 }
