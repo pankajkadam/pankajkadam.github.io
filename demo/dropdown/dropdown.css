@@ -1,0 +1,145 @@
+body{
+	width: auto;
+	margin: auto;
+	font-family: 'Noticia Text',serif;
+	f
+}
+.site
+{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+nav
+{
+	width: 60em;
+	font-family: "Open Sans",sans-serif;
+	font-weight: 400;
+	padding-top: 150px;
+}
+nav ul
+{
+	height: 3.75em;
+	background-color: #e15a1f;
+	margin: 0px;
+	padding: 0px;
+}
+nav ul li{
+	list-style-type: none;
+	float: left;
+	width: 24.9%;
+	height: 100%;
+
+}
+nav ul li a
+{
+	height: 100%;
+	font-size: 1.5em;
+	line-height: 2.5em;
+	text-align: center;
+	color: white;
+	display: block;
+	text-decoration: none;
+}
+nav ul li a:hover
+{
+	background-color: #cc470d;
+}
+/*.home
+{
+	background-color: #cc470d;
+}*/
+nav span:after
+{
+	width: 0;
+	height: 0;
+	border: 0.313em solid transparent;
+	border-bottom: none;
+	border-top-color: #efa585;
+	content: '';
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	right: -8px;
+}
+nav ul li.blog
+{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #cc470d;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #cc470d;
+
+}
+nav ul li.blog:hover
+{
+	background-color: #cc470d;
+}
+nav ul li.blog ul
+{
+	position: absolute;
+	width: 25%;
+	height: 204px;
+	background-color:#cc470d;
+	display: none;
+
+}
+nav ul li.blog ul li
+{
+	width: 240px;
+	height: 51px;
+	
+}
+nav ul li.blog ul li a{
+	text-align: start;
+	font-size: 1.25em;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e15a1f;
+	padding-left: 0.75em;
+
+
+}
+nav ul li.blog ul li a:hover
+{
+	background-color: #e15a1f;
+
+}
+nav ul li.work
+{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #cc470d;
+}
+nav ul li.work:hover
+{
+	background-color: #cc470d;
+}
+nav ul li.work ul
+{
+	position: absolute;
+	width: 25%;
+	height: 154px;
+	background-color: #cc470d;
+	display: none;
+}
+nav ul li.work ul li
+{
+	width: 240px;
+	height: 51px;
+	
+}
+nav ul li.work ul li a
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e15a1f;
+	font-size: 1.25em;
+	text-align: start;
+	padding-left: 0.75em;
+}
+nav ul li.work ul li a:hover
+{
+	background-color: #e15a1f;
+}
