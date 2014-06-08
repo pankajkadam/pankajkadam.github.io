@@ -182,7 +182,6 @@ a
 .main
 {
 	padding: 30px 0;
-	height: 740px;
 }
 .wrap
 {
@@ -586,9 +585,8 @@ a
 {
 	background-position: -39px 143px;
 	position: relative;
-	width: 4px;
 	float: left;
-	left: 12px;
+	left: 6px;
 	height: 39px;
 	padding-left: 39px;
 }
@@ -599,7 +597,7 @@ a
 .column_right_grid input[type="text"]
 {
 	padding: 10px;
-	font-size: 1em;
+	font-size: 14px;
 	color: #fff;
 	font-family: sans-serif;
 	font-weight: 500;
