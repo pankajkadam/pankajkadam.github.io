@@ -65,6 +65,16 @@ body{
 {
 	width: auto;
 }
+.demosContainer h3
+{
+	border-bottom: 1px solid #E7E4E4;
+	color: #bdc3c7;
+	font-size: 24px;
+	margin-top: 20px;
+	left: 13px;
+	position: relative;
+	margin-bottom: 10px;
+}
 .demosContainer ul
 {
 	margin-top: 0;
