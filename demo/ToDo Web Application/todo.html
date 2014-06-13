@@ -1,0 +1,58 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ToDo Web Application by Pankaj Kadam</title>
+	<link rel="stylesheet" type="text/css" href="todo.css">
+	<script src="script/jquery-2.1.0.js"></script>
+	<script src="script/handlebars.js"></script>
+</head>
+<body>
+	<div id="main">
+		<div id="logo"></div>
+		<h1 class="appName">Todo Web Application</h1>
+	    <div id="toDoList">
+	      <div id="userInput">
+            <input type="text" id="newItem" placeholder="What needs to be done ?">
+            <div class="toggleall"></div>
+	      </div>
+	      <div class="hidden" id="itemContainer">
+	      	<script id="template" type="text/x-handlebars-template">
+         
+            	<li class="{{status}}" id="{{key}}">
+            		<div class="show"></div>
+            		  <p class="{{class}}">{{value}}</p>
+                     <button class="destroy"></button>
+            	</li>
+      
+
+	        </script>
+	        <ul id="lists" class="view">
+	        </ul>
+	      </div>
+	      
+	       <div id="menu">
+	      	  <button id="all" title="show All">All</button>
+	      	  <button id="active" title="show Active">Active</button>
+ 	      	  <button id="showComplete" title"show Completed">Completed</button>
+	      	  <button id="clearCompleted" title="clear Completed">Clear Completed</button>
+	       </div>
+              	     
+        </div>  
+        <div id="info">
+        	<h2>Key Features Of The Application :</h2>
+        	Session Storage,<br>
+        	Application Written in Vanila JS,<br>
+        	User Can Mark the Task as Completed,<br>
+       	User can Categorized the Task as All,Active,Completed,<br>
+        	User Friendly interface
+        </div>  
+	</div>
+	<script src="script/view.js"></script>
+	<script src="script/controller.js"></script>
+	<script src="script/model.js"></script>
+</body>
+</html>
+
+
+
+
