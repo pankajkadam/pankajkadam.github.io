@@ -1,8 +1,9 @@
 body{
 	width: auto;
 	margin: auto;
+	background: #f8f8f8;
 	font-family: 'Noticia Text',serif;
-	f
+	
 }
 .site
 {
@@ -19,8 +20,7 @@ nav
 }
 nav ul
 {
-	height: 3.75em;
-	background-color: #e15a1f;
+	height: 70px;
 	margin: 0px;
 	padding: 0px;
 }
@@ -28,60 +28,71 @@ nav ul li{
 	list-style-type: none;
 	float: left;
 	width: 24.9%;
-	height: 100%;
-
 }
 nav ul li a
 {
 	height: 100%;
-	font-size: 1.5em;
+	font-size: 26px;
+	position: relative;
 	line-height: 2.5em;
+    font-weight: bold;
+    padding: 0px 14px;
 	text-align: center;
-	color: white;
+	color: #EDAE00;
+	background: -webkit-linear-gradient(top,#777676 0%,#979393 45%,#7B7575 100%);
 	display: block;
+	transition:all 0.25s ease;
+	-webkit-transition:all 0.25s ease;
+	border-bottom: 7px solid#959393;
 	text-decoration: none;
+}
+nav ul li:nth-child(odd) a:hover
+{
+	border-bottom-color: #6889FF;
+}
+nav ul li:nth-child(even) a:hover
+{
+    border-bottom-color:#FF91A0;
+}
+nav ul li:nth-child(odd) a:hover:before
+{
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 11.5px solid transparent;
+	border-right: 11.5px solid transparent;
+	border-bottom: 11.5px solid #6889FF;
+	right: 45%;
+	bottom: 0;
+}
+
+nav ul li:nth-child(even) a:hover:before
+{
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 11.5px solid transparent;
+	border-right: 11.5px solid transparent;
+	border-bottom: 11.5px solid #FF91A0;
+	right: 45%;
+	bottom: 0;
 }
 nav ul li a:hover
 {
-	background-color: #cc470d;
-}
-/*.home
-{
-	background-color: #cc470d;
-}*/
-nav span:after
-{
-	width: 0;
-	height: 0;
-	border: 0.313em solid transparent;
-	border-bottom: none;
-	border-top-color: #efa585;
-	content: '';
-	vertical-align: middle;
-	display: inline-block;
-	position: relative;
-	right: -8px;
-}
-nav ul li.blog
-{
-	border-left-width: 1px;
-	border-left-style: solid;
-	border-left-color: #cc470d;
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #cc470d;
-
-}
-nav ul li.blog:hover
-{
-	background-color: #cc470d;
+	color: #EEEFEF;
+	text-shadow:inset 0 0 8px 0 red;
+	-moz-transition:all 0.25s ease;
+	-webkit-transition:all 0.25s ease;
+	-o-transition:all 0.25s ease;
+	transition:all 0.25s ease;
 }
 nav ul li.blog ul
 {
 	position: absolute;
 	width: 25%;
 	height: 204px;
-	background-color:#cc470d;
 	display: none;
 
 }
@@ -91,37 +102,17 @@ nav ul li.blog ul li
 	height: 51px;
 	
 }
-nav ul li.blog ul li a{
-	text-align: start;
+nav ul li.blog ul li a
+{
+	text-align: center;
 	font-size: 1.25em;
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #e15a1f;
 	padding-left: 0.75em;
-
-
-}
-nav ul li.blog ul li a:hover
-{
-	background-color: #e15a1f;
-
-}
-nav ul li.work
-{
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #cc470d;
-}
-nav ul li.work:hover
-{
-	background-color: #cc470d;
 }
 nav ul li.work ul
 {
 	position: absolute;
 	width: 25%;
 	height: 154px;
-	background-color: #cc470d;
 	display: none;
 }
 nav ul li.work ul li
@@ -132,14 +123,7 @@ nav ul li.work ul li
 }
 nav ul li.work ul li a
 {
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #e15a1f;
 	font-size: 1.25em;
-	text-align: start;
+	text-align: center;
 	padding-left: 0.75em;
-}
-nav ul li.work ul li a:hover
-{
-	background-color: #e15a1f;
 }
