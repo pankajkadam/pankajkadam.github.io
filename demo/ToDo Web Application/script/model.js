@@ -1,20 +1,17 @@
-function DataItem(data,db,totalTask)
+function DataItem(data,db)
 {
-  this.setData(data,db,totalTask);
+  this.setData(data,db);
 }
 DataItem.prototype = {
   data:{},
-  totalTask:{},
-  setData:function(data,db,totalTask)
+  setData:function(data,db)
   {
     this.data=data;
-    this.totalTask=totalTask;
     var dbObj = new DbManager(db);
-    dbObj.store(data,totalTask);
+    dbObj.store(data);
   },
   getData:function(){
     return this.data;
-    return this.totalTask;
   }
 }
 function DbManager(dbName){
@@ -24,10 +21,8 @@ DbManager.prototype ={
   store:function(data){
         this.keycount();
         var sessionFile=window.sessionStorage;
-        var totalTask = sessionFile.length;
-        totalTask = parseInt(totalTask)+1;
         var dataString=JSON.stringify(data);
-        this.db.setItem(data.key,dataString,totalTask);
+        this.db.setItem(data.key,dataString);
   },
     
     keycount:function(){
