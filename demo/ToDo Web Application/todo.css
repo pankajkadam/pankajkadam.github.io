@@ -11,16 +11,18 @@ body{
 	width: 960px;
 	margin: 0 auto;
 	position: relative;
-	height: 400px;
 }
-#logo
+.sprite
 {
-	background: url(image/todo.png) no-repeat;
+	background: url(image/sprites.png);
+}
+.logo
+{
 	width: 100px;
 	height: 65px;
-	background-position: 1px -112px;
+	background-position: -51px -22px;
 	position: absolute;
-	left: 212px;
+	left: 195px;
 	top:-12px;
 }
 .appName
@@ -57,7 +59,7 @@ body{
 	width: 600px;
 	position: absolute;
 	height: 25px;
-	background-color:#3498DB;
+	background-color:#6c615c;
 	z-index: 7;
 }
 #userInput
@@ -79,13 +81,12 @@ body{
 }
 .toggleall
 {
-	background: url(image/todo.png) no-repeat;
 	width: 35px;
 	height: 35px;
-	background-position: -21px -185px;
+	background-position: -67px -104px;
 	position: absolute;
 	top: 45px;
-	left: 15px;
+	left: 8px;
 }
 .toggleall:hover
 {
@@ -119,8 +120,7 @@ body{
 	width: 35px;
 	height: 35px;
 	position: absolute;
-	background: url(image/todo.png);
-	background-position: -17px -58px;
+	background-position: -68px -144px;
 	left: 8px;
 	top: 26px;
 }
@@ -138,20 +138,20 @@ p
 .destroy:hover
 {
 	cursor: pointer;
+	background-position: -68px -211px;
 }
 .view button
 {
-	background: url(image/todo.png);
 	border: none;
 	width: 39px;
 	opacity: .8;
-	height: 37px;
+	height: 25px;
 	margin-top: 16px;
 	display: inline-block;
 	position: absolute;
-	top: 9px;
+	top: 13px;
 	right: 14px;
-	background-position: -16px -14px;
+	background-position: -67px -162px;
 	border-radius: 55%;
 }
 #menu
