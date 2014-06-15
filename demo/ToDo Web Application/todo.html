@@ -1,3 +1,4 @@
+<!doctype.html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -8,20 +9,20 @@
 </head>
 <body>
 	<div id="main">
-		<div id="logo"></div>
+		<div class="sprite logo"></div>
 		<h1 class="appName">Todo Web Application</h1>
 	    <div id="toDoList">
 	      <div id="userInput">
             <input type="text" id="newItem" placeholder="What needs to be done ?">
-            <div class="toggleall"></div>
+            <div class="sprite toggleall"></div>
 	      </div>
 	      <div class="hidden" id="itemContainer">
 	      	<script id="template" type="text/x-handlebars-template">
          
             	<li class="{{status}}" id="{{key}}">
-            		<div class="show"></div>
+            		<div class="sprite show"></div>
             		  <p class="{{class}}">{{value}}</p>
-                     <button class="destroy"></button>
+                     <button class="sprite destroy"></button>
             	</li>
       
 
@@ -41,7 +42,7 @@
         <div id="info">
         	<h2>Key Features Of The Application :</h2>
         	Session Storage,<br>
-        	Application Written in Vanila JS,<br>
+        	Application Written in JS,<br>
         	User Can Mark the Task as Completed,<br>
        	User can Categorized the Task as All,Active,Completed,<br>
         	User Friendly interface
