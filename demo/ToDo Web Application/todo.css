@@ -178,7 +178,7 @@ p
 #menu button:hover
 {
 	cursor: pointer;
-	color: #3498DB;
+	color: red;
 }
 #clearCompleted
 {
