@@ -37,7 +37,7 @@ body{
 	position: relative;
 	width: 600px;
 	background: #fff;
-	margin:50 auto;
+	margin:50px auto;
 	box-shadow: 0 5px 3px 0 rgba(0,0,0,0.33);
 }
 #toDoList:before
