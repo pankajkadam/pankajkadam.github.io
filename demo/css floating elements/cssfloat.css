@@ -44,7 +44,6 @@ h2
 .inlineBlock
 {
 	display: inline-block;
-	border: 1px solid rgba(198,229,32,0.83);
 	padding: 10px;
 	margin-top: 20px;
 }
