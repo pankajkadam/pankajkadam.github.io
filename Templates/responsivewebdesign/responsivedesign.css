@@ -510,6 +510,10 @@ strong
 	width: 100%;
 	text-align: center;
 }
+.footerbtm ul li
+{
+	display: inline-block;
+}
 }
 @media only screen and (min-width: 481px) and (max-width: 767px){
 .wrap 
