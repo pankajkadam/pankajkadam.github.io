@@ -1,0 +1,133 @@
+<!doctype.html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="responsivedesign.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"> 
+	<script type="text/javascript" src="jquery-2.1.0.js"></script>
+</head>
+<body>
+	<div id="site">
+		<div class="header ">
+			<div class="wrap">
+				<div class="logo">
+					<img src="image/logo.png">
+				</div>
+			    <div class="menu">Menu</div>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/">About us</a></li>
+					<li><a href="/">Service</a></li>
+					<li><a href="/">Pages</a></li>
+					<li><a href="/">Blog</a></li>
+					<li><a href="/">Contact</a></li>
+				</ul>
+				
+			</div>
+		</div>
+		<div class="slider">
+			<img src="image/slider.jpg">
+		</div>
+		<div class="postcontainer">
+			<div class="maincontent">
+				<h2>lorem ipsum is <span> simply dummy </span>text of the printing</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			    <div class="grids">
+				   <div class="grids1">
+				   	  <img src="image/icon1.png">
+				   	  <h3>Lorem Ipsum is <span> Simply </span></h3>
+				   	  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				   </div>
+				   <div class="grids2">
+                     <img src="image/icon2.png">
+                     <h3>Lorem Ipsum Is <span> Simply </span></h3>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				   </div>
+				   <div class="grids3">
+				   	<img src="image/icon3.png">
+				   	 <h3>Lorem Ipsum is <span> Simply </span></h3>
+				   	 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+				   </div>
+			    </div>
+			</div >   
+			<div class="maincontent_bt">
+				 <div class="main_bt">
+			    	<div class="main_bt1">
+			    		<img src="image/pic4.jpg">
+			    		<div class="text">
+			    			<h3>Lorem Ipsum Is Simply Text</h3>
+			    			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+			    		</div>
+			    	</div>
+			    	<div class="main_bt2">
+			    		<img src="image/pic5.jpg">
+			    		<div class="text">
+			    			<h3>Lorem Ipsum Is Simply Text</h3>
+			    			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+			    		</div>
+			    	</div>
+			    	<div class="main_bt3">
+			    		<img src="image/pic6.jpg">
+			    		<div class="text">
+			    			<h3>Lorem Ipsum Is Simply Text</h3>
+			    			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+			    		</div>
+			    	</div>
+			     </div>
+			</div>
+	    </div>
+	    <div class="footer">
+	    	<div class="footercontent">
+	    		<div class="footerwrap">
+	    			<div class="column1">
+	    				<h4>Popular Post</h4>
+	    				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	    				<ul>
+	    					<li class="timer"><a href="">28-june-2014</a></li>
+	    				</ul>
+	    				<p class="top">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	    				<ul>
+	    					<li class="timer"><a href="">28-june-2014</a></li>
+	    				</ul>
+	    			</div>
+	    			<div class="column2">
+	    				<h4>Tags</h4>
+	    				<p>It is a long established fact that a reader will be distracted by the<strong> readable</strong> content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal <strong>blog</strong> Many desktop publishing packages and web page editors now use Lorem</p>
+	    			</div>
+	    			<div class="column3">
+	    				<h4>A Little About Us</h4>
+	    				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+	    				<p>It is a long established fact that a reader will be of a page when looking at its layout.</p>
+	    			</div>
+	    			<div class="column4">
+	    				<h4>Get In Touch</h4>
+	    				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sinc</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="footerbtm">
+	    		<ul>
+	    			<li><a href="" class="social rs"></a></li>
+	    			<li><a href="" class="social fb"></a></li>
+	    			<li><a href="" class="social tw"></a></li>
+	    			<li><a href="" class="social in"></a></li>
+	    		</ul>
+	    		<div class="copyright">
+	    			<p class="copy"><span>&copy; Webworld-v2.All rights reserved|Template by W3Layouts</span></p>
+	    		</div>
+	    		
+	    	</div>
+	    </div>
+	</div>
+	<script>
+	 $('.menu').click(function(event) {
+	 	$('ul>li').toggle();
+	 });
+	 $(window).resize(function(){
+	 	if($(window).width()>320)
+	 	{
+	 		$('ul>li').removeAttr('style');
+	 	}
+	 })
+	</script>
+</body>
+</html>
