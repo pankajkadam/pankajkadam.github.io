@@ -52,10 +52,6 @@ ul li img
 	-webkit-transform:rotateY(30deg);
 	-webkit-transition-duration:0.5s;
 }
-ul li:hover img
-{
-	-webkit-transform:rotateY(0deg);
-}
 .langinfo
 {
 	border: 10px solid #fcfafa;
